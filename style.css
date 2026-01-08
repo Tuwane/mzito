@@ -275,3 +275,93 @@ body {
     filter: blur(6px);
     transform: scale(1.05); /* prevents white edges after blur */
 }
+
+.hero-blur {
+    background: url("images/Supplanter Trading services overview.png") center/cover no-repeat;
+    height: 60vh;
+    position: relative;
+}
+
+.hero-blur::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(6px);
+    background: rgba(0,0,0,0.3);
+}
+
+.hero-content {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+.home-image {
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Background layer */
+.bg-image {
+    position: absolute;
+    inset: 0;
+    background: url("images/Supplanter Trading services overview.png") center/cover no-repeat;
+    filter: blur(8px);
+    transform: scale(1.1);
+}
+
+/* Make sure next sections stay in place */
+.home-image + * {
+    position: relative;
+}
+
+
+
+
+.home-image {
+    position: relative;
+    width: 100%;
+    height: 60vh; /* adjust as needed */
+    overflow: hidden;
+}
+
+/* The image itself */
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* makes it cover the section */
+    filter: blur(6px);   /* blur the image */
+    transform: scale(1.05); /* prevents edges showing */
+}
+
+/* Text overlay */
+.hero-content {
+    position: absolute; /* sit on top of the image */
+    top: -8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #fff;
+    text-align: left;
+    padding: 20px;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.6); /* optional for readability */
+}
+
+/* Start hidden & moved down */
+.scroll-in {
+    opacity: 0;
+    transform: translateY(50px);  /* start 50px lower */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* When in view, fade & slide up */
+.scroll-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
