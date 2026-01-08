@@ -268,3 +268,10 @@ body {
     height: auto;
     display: block;
 } 
+
+
+/* 🔽 Blur effect */
+.blur-bg img {
+    filter: blur(6px);
+    transform: scale(1.05); /* prevents white edges after blur */
+}
