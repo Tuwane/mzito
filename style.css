@@ -356,7 +356,7 @@ body {
 /* Start hidden & moved down */
 .scroll-in {
     opacity: 0;
-    transform: translateY(50px);  /* start 50px lower */
+    transform: translateY(-200px);  /* start 50px lower */
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
