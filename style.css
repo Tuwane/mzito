@@ -262,3 +262,9 @@ body {
     width: 100%;
     cursor: pointer;
 }
+/* home image */
+.home-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+} 
