@@ -265,9 +265,11 @@ body {
 /* home image */
 .home-image img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    
     display: block;
 } 
+
 
 
 /* 🔽 Blur effect */
@@ -387,4 +389,27 @@ body {
     background-color: #ff6f61;    /* contrasting color for underline */
     margin: 5px auto 0 auto;      /* center under the text */
     border-radius: 2px;           /* rounded edges */
+}
+
+
+/*Button  */
+
+.btn-explore {
+  background-color: #ffffff;
+  color: #1a4d2e; /* Deep green accent */
+  border: 2px solid #1a4d2e;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-explore:hover {
+  background-color: #1a4d2e;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
